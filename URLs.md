@@ -4,6 +4,7 @@
 
 * <https://projects.lukehaas.me/css-loaders/> - CSS spinners
 * <https://tobiasahlin.com/spinkit/> - more CSS loaders (spinners)
+* <https://include-media.com/> - media queries
 
 ## JavaScript
 
@@ -27,17 +28,27 @@
 
 * <https://ericelliottjs.com/premium-content/lesson-pure-functions> - pure functions
 
-## GraphQL
-
-* <https://www.howtographql.com/>
-* <https://relay.dev/docs/en/graphql-in-relay>
-
-## Interviewing
-
-* <https://www.freelancer.com/community/articles/interview-with-an-hr-lead-i-have-interviewed-more-than-500-developers-and-here-is-my-advice> - advice
-
 ## Server
 
 ### Nginx
 
 * <https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04-quickstart>
+
+## PosgtreSQL
+
+* <https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546> - postgres cli cheatsheet
+* <https://node-postgres.com/> node adapter for psql
+
+## GraphQL
+
+* <https://medium.com/devschacht/esteban-herrera-5-reasons-you-shouldnt-use-graphql-bae94ab105bc>
+* <https://www.howtographql.com/>
+* <https://relay.dev/docs/en/graphql-in-relay>
+
+## Pair programming
+
+* <https://tuple.app/pair-programming-guide/> pair programming guide
+
+## Interviewing
+
+* <https://www.freelancer.com/community/articles/interview-with-an-hr-lead-i-have-interviewed-more-than-500-developers-and-here-is-my-advice> - advice
