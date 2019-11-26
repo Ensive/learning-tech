@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block"></div>
+  <div>
+    <div class="foods">
+      Best foods
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <script>
+    window.navigator.geolocation.getCurrentPosition((position) => {
+      const { longitude, latitude } = position.coords;
+      fetch(`http://api.geonames.org/countryCodeJSON?lat=${latitude}&lng=${longitude}&username=demo`)
+        .then(response => response.json())
+        .then((json) => {
+          console.log('success json', json);
+        })
+        .catch(error => {
+          console.log('error :', error);
+        })
+    });
+
+    const $0 = window.document.querySelector('.block')
+
+    $0.childElementCount;
+    $0.childNodes // returns NodeList object;
+    $0.children // returns HTMLCollection;
+    $0.contains // checks if element includes element
+    $0.contentEditable;
+    $0.exitFullScreen
+    $0.requestFullscreen
+    $0.getAttribute;
+    $0.getBoundingClientRect;
+    $0.hasAttribute
+    $0.hasAttributes
+    $0.hasChildNodes
+    $0.insertBefore
+    $0.isContentEditable // read only property
+    $0.isEqualNode
+    $0.isSameNode // use ===
+    $0.nextSibling
+    $0.previousSibling
+    $0.nextElementSibling
+    $0.offsetWidth
+    $0.removeAttribute
+    $0.removeChild
+    $0.removeEventListener
+    $0.setAttribute
+    $0.tabIndex
+    $0.tagName
+    $0.style // style object
+  </script>
+</body>
+
+</html>

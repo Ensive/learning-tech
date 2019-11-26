@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<style>
+  .element {
+    z-index: 1;
+    background: red;
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    display: block;
+  }
+
+  .element-1 {
+    z-index: 99;
+  }
+
+  .element-3 {
+    z-index: 999999999;
+    background: black;
+    width: 200px;
+    height: 100px;
+    right: 80px;
+  }
+</style>
+
+<body>
+  <section>
+    <h1>devops</h1>
+    <article>
+      <h3>
+        type of balancers
+      </h3>
+      <ul>
+        <li>software based</li>
+        <li>hardware based</li>
+      </ul>
+    </article>
+    <article>
+      <h3>
+        computing today
+      </h3>
+      <p>bare metal => virtualized => cloud => containers</p>
+      <ul>
+        <li>microservices</li>
+        <li>3 tier applications</li>
+      </ul>
+      <p>Transport (layer 4) => Application (layer 7)</p>
+    </article>
+  </section>
+
+  <div class="element element-1"></div>
+  <div class="element">
+    <div class="element element-3"></div>
+  </div>
+</body>
+
+</html>
