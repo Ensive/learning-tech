@@ -1,4 +1,4 @@
-# URLs
+# URLs with learn & practice resources
 
 ## CSS
 
@@ -43,6 +43,10 @@
 
 * <https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546> - postgres cli cheatsheet
 * <https://node-postgres.com/> node adapter for psql
+
+## Infrastructure
+
+* <https://learn.hashicorp.com/terraform/getting-started/build> getting started with terraform
 
 ## GraphQL
 
