@@ -28,6 +28,11 @@
 
 * <https://ericelliottjs.com/premium-content/lesson-pure-functions> - pure functions
 
+## Unix/Linux shell
+
+* <https://www.commandlinefu.com/commands/browse/sort-by-votes> - common bash commands
+* <https://explainshell.com/explain/1/curl> - explains every shell command in detail
+
 ## Server
 
 ### Nginx
