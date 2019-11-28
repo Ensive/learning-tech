@@ -9,6 +9,7 @@
 ## JavaScript
 
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals> tagged template literals and general interpolation
+* padStart, padEnd, trim, trimStart, trimEnd
 
 ### React
 
