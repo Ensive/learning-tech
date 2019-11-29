@@ -1,3 +1,3 @@
-# Cracking the Coding Interview book
+# Cracking the Coding Interview book (coding solutions)
 
-Solving problems from the book one by one, for now in JavaScript
+Coding solutions for problems one by one from the book using JavaScript
