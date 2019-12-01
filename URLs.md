@@ -10,6 +10,8 @@
 
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals> tagged template literals and general interpolation
 * padStart, padEnd, trim, trimStart, trimEnd
+* compare arrays and objects via JSON.stringify() + pretty print
+* spread operator immutable only on 1st lvl (nested objects are not cloned but referenced)
 
 ### React
 
