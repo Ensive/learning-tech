@@ -1,4 +1,4 @@
-class Node {
+export default class Node {
   constructor(d) {
     this.next = null; //
     this.value = d;
@@ -32,6 +32,7 @@ class Node {
     }
 
     node.next = end;
+    return this;
   }
 }
 
@@ -48,8 +49,8 @@ node.appendToTail(6);
 node.appendToTail(7);
 node.deleteNode(1);
 
-console.log('node :', node);
-console.log('node :', JSON.stringify(node, null, 2));
+// console.log('node :', node);
+// console.log('node :', JSON.stringify(node, null, 2));
 
 // const newLinkedList = Node.appendToTail(1);
 // console.log('newLinkedList :', newLinkedList);
