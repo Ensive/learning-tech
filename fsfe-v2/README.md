@@ -8,6 +8,7 @@ ls
 pwd
 mkdir
 rmdir # not used
+ls -lhS
 ```
 
 ```bash

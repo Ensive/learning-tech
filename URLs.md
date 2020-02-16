@@ -12,6 +12,7 @@
 * padStart, padEnd, trim, trimStart, trimEnd
 * compare arrays and objects via JSON.stringify() + pretty print
 * spread operator immutable only on 1st lvl (nested objects are not cloned but referenced)
+* <https://risingstars.js.org/2019/en/> - popular JS stuff (GitHub stars)
 
 ### React
 
@@ -66,3 +67,13 @@
 ## Interviewing
 
 * <https://www.freelancer.com/community/articles/interview-with-an-hr-lead-i-have-interviewed-more-than-500-developers-and-here-is-my-advice> - advice
+
+## NodeJS
+
+* <https://opensource.com/article/20/1/open-source-tools-nodejs> - tools
+* <https://github.com/goldbergyoni/nodebestpractices> - best practices in Node
+
+## WebVR
+
+* <https://webvr.info/developers/>
+* <https://webvr.rocks/>

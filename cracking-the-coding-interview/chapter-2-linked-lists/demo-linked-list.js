@@ -12,7 +12,6 @@ const node = {
 // [] appendToTail(7)
 const list = [
   // end, n, n.next = end
-
   {
     value: 1,
     next: 5 // 5
@@ -29,32 +28,6 @@ const list = [
     value: 7
   }
 ];
-
-class Node {
-  constructor() {
-    this.next = new Node(null); //
-    this.data = undefined;
-  }
-
-  create(d) {
-    this.data = d;
-  }
-
-  static appendToTail(d) {
-    this.end = new Node(d);
-    // cache
-    this.n = this;
-
-    while (this.n.next !== null) {
-      this.n = this.n.next;
-    }
-
-    this.n.next = end;
-  }
-}
-
-const newLinkedList = Node.appendToTail(1);
-console.log('newLinkedList :', newLinkedList);
 
 const linkedList = [
   {

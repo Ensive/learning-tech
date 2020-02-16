@@ -36,7 +36,7 @@ const ll = {
   value: 1
 };
 
-export default function returnKthToLast(k, node) {
+function returnKthToLast(k, node) {
   let result = null;
   let count = 1;
 
