@@ -177,8 +177,8 @@ Authentication
 
 ## Domain settings
 
-* created dns records on digital ocean
-* you can connect custom name servers (in go daddy you can specify the digital ocean nameservers)
+- created dns records on digital ocean
+- you can connect custom name servers (in go daddy you can specify the digital ocean nameservers)
 
 ## Server setup
 
@@ -236,7 +236,7 @@ shell
 - handles errors and restarts
 - can handle logging and clustering
 
-# PART 2
+## PART 2
 
 - stdin
 - stdout
