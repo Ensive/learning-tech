@@ -11,13 +11,13 @@ Most of the systems runs on Linux
 * dns
 * big data systems
 
-Servers
+## Servers
 
 * Apache
 * nginx
 * web server
 
-Distributions
+## Distributions
 
 * Redhat (Fedora open source, CentOS, Scientific)
 * Debian (Ubuntu, Knoppix, Mint, Kali Linux)
