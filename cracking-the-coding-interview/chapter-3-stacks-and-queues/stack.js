@@ -11,10 +11,6 @@ class StackNode {
 }
 
 class MyStack {
-  constructor() {
-    this.top = undefined;
-  }
-
   static pop() {
     if (this.top == null) throw new Error('EmptyStackException');
 
@@ -39,14 +35,41 @@ class MyStack {
   }
 }
 
-console.log('MyStack.isEmpty(); :>> ', MyStack.isEmpty());
-MyStack.push(1);
-MyStack.push(9);
-MyStack.push(5);
-console.log('MyStack.peek(); :>> ', MyStack.peek());
-MyStack.pop();
-MyStack.pop();
-// MyStack.pop();
-console.log('MyStack.peek(); :>> ', MyStack.peek());
-console.log('MyStack.isEmpty(); :>> ', MyStack.isEmpty());
+// console.log('MyStack.isEmpty(); :>> ', MyStack.isEmpty());
+// MyStack.push(1);
 // MyStack.push(9);
+// MyStack.push(5);
+// console.log('MyStack.peek(); :>> ', MyStack.peek());
+// MyStack.pop();
+// MyStack.pop();
+// MyStack.pop();
+// console.log('MyStack.peek(); :>> ', MyStack.peek());
+// console.log('MyStack.isEmpty(); :>> ', MyStack.isEmpty());
+// MyStack.push(9);
+
+// Array
+// Stack
+
+//
+// var N = 9999999999;
+// for (var i = 0; i < N; i++) {
+//   // operations
+//   for (var k = 0, k < N; k++) {
+
+//   }
+// }
+
+// for (var p = 0...) {
+
+// }
+
+// O(n) - complexity
+// O(n * n) -
+// O(3n) -
+// O(1) -
+// var i = 1;
+// var a = [1, 2, 3]
+// a[0] = 1;
+// a.sort(); O(n * log n)
+
+module.exports = MyStack;
