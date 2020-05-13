@@ -27,4 +27,4 @@
 3.
 4.
 5. Determine strategy to improve the security of an existing solution
-6. Determine how to improve the deployment 
+6. Determine how to improve the deployment
