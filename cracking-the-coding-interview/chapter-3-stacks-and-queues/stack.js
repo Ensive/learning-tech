@@ -10,8 +10,8 @@ class StackNode {
   }
 }
 
-class MyStack {
-  static pop() {
+class Stack {
+  pop() {
     if (this.top == null) throw new Error('EmptyStackException');
 
     let item = this.top.data;
@@ -19,18 +19,18 @@ class MyStack {
     return item;
   }
 
-  static push(item) {
+  push(item) {
     let t = new StackNode(item);
     t.next = this.top;
     this.top = t;
   }
 
-  static peek() {
+  peek() {
     if (this.top == null) throw new Error('EmptyStackException');
     return this.top.data;
   }
 
-  static isEmpty() {
+  isEmpty() {
     return this.top == null;
   }
 }
@@ -72,4 +72,4 @@ class MyStack {
 // a[0] = 1;
 // a.sort(); O(n * log n)
 
-module.exports = MyStack;
+module.exports = Stack;
