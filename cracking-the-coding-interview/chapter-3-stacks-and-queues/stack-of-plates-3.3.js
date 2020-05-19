@@ -1,4 +1,4 @@
-const Stack = require('./stack');
+const Stack = require('./Stack');
 
 const SetOfStacks = (() => {
   // * store list of stacks
