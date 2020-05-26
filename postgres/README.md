@@ -251,8 +251,27 @@ SELECT person.first_name, person.last_name, car.make, car.model, car.price
 FROM person
 RIGHT JOIN car ON person.car_id = car.id;
 
-# relations
+## relations
 
 * person has car
 * person can only have one car
 * car can belong to one person only
+
+## Performance
+
+* <https://thoughtbot.com/blog/advanced-postgres-performance-tips>
+
+## Advanced queries
+
+* https://bytescout.com/blog/postgresql-advanced-queries.html
+
+## Additional
+
+* <https://www.mockaroo.com/>
+* <https://www.postgresql.org/docs/11/datatype-datetime.html>
+* <https://www.postgresql.org/docs/9.1/datatype-numeric.html>
+* <https://www.w3schools.com/sql/func_sqlserver_nullif.asp>
+* <https://www.w3schools.com/sql/sql_having.asp>
+* <https://www.w3schools.com/sql/sql_between.asp>
+* Data Types <https://www.postgresql.org/docs/11/datatype.html>
+* Aggregate functions <https://www.postgresql.org/docs/11/functions-aggregate.html>
