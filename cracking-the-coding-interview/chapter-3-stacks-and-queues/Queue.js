@@ -61,4 +61,4 @@ queue.add(2);
 queue.add(5);
 queue.add(7);
 
-console.log('queue :>> ', queue);
+// console.log('queue :>> ', queue);
