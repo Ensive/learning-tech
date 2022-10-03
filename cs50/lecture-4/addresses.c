@@ -2,8 +2,8 @@
 
 // typedef struct
 // {
-//   string name;
-//   string number;
+//   char* name;
+//   char* number;
 // }
 // person;
 
