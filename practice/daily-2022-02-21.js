@@ -1,5 +1,3 @@
-// Hi, here's your problem today. This problem was recently asked by Uber:
-
 // Imagine you are building a compiler. Before running any code, the compiler must check that the parentheses in the program are balanced. Every opening bracket must have a corresponding closing bracket. We can approximate this using strings.
 
 // Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

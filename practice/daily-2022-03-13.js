@@ -1,5 +1,3 @@
-// Hi, here's your problem today. This problem was recently asked by Uber:
-
 // Given a linked list of integers, remove all consecutive nodes that sum up to 0.
 
 // Example:

@@ -1,5 +1,3 @@
-// Hi, here's your problem today. This problem was recently asked by Uber:
-
 // Given a list of numbers, find if there exists a pythagorean triplet in that list. A pythagorean triplet is 3 variables a, b, c where a2 + b2 = c2
 
 // THINKING

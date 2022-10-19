@@ -1,0 +1,40 @@
+.App {
+  width:500px;
+  border:2px solid black;
+  border-radius:20px;
+  background: linear-gradient(#fff 10%, #f1f1f1 98%, #ccc);
+  padding:0 20px 20px;
+  font-family: monospace;
+}
+
+body {
+  background: #def;
+}
+
+.button {
+  border: 0;
+  /* width: 80px; */
+  height: 24px;
+  margin: 0 6px 0 0;
+  border-radius: 4px;
+  padding: 6px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.button.button--page {
+  width: 24px;
+  height: 24px;
+}
+
+.button.is-active {
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
+}
