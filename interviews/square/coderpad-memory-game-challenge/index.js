@@ -10,6 +10,7 @@
 // feature 1: track of mistakes
 // feature 2: track of successful clicks
 
+let highlightedCellsCache = [];
 const TIMEOUT = 1000;
 const App = () => {
   // TODO: generate grid of size X
@@ -34,10 +35,11 @@ const App = () => {
   // TODO: use difficulty with range slider to set the grid size
   const [difficulty, setDifficulty] = React.useState(3);
   const [highlightedCells, setHighlightedCells] = React.useState([]);
-  let highlightedCellsCache = [];
+  console.log('highlightedCellsCache :>> ', highlightedCellsCache);
 
   return (
     <div>
+      <h1>Memory game</h1>
       <button onClick={onPlay}>Play</button>
       {grid.map((row, rowIndex) => {
         return (
@@ -67,13 +69,12 @@ const App = () => {
 
   function highlightAndHideCells() {
     // TODO: pass size of the grid
-    setHighlightedCells(
-      generateArrayWithRandomNumbersFromInterval(
-        0,
-        difficulty * difficulty - 1,
-        difficulty,
-      ),
+    highlightedCellsCache = generateArrayWithRandomNumbersFromInterval(
+      0,
+      difficulty * difficulty - 1,
+      difficulty,
     );
+    setHighlightedCells(highlightedCellsCache);
 
     // TODO: take care of timeout
     setTimeout(hideHighlitedCells, TIMEOUT);
@@ -81,7 +82,9 @@ const App = () => {
 
   function onCellClick() {}
 
-  function hideHighlitedCells() {}
+  function hideHighlitedCells() {
+    setHighlightedCells([]);
+  }
 };
 
 function randomIntFromInterval(min, max) {

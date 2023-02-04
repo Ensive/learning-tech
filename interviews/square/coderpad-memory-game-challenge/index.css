@@ -16,6 +16,15 @@ body {
   background-color: #ccc;
   margin: 5px;
   display: inline-block;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.cell:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
 }
 
 .cell.cell--highlighted {
