@@ -9,3 +9,5 @@ function renderPyramid(pyramidPeak) {
   const completePyramid = pyramid.concat(pyramid.slice(0, -1).reverse());
   completePyramid.forEach((line) => console.log(line));
 }
+
+renderPyramid(9);
