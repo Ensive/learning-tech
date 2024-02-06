@@ -126,6 +126,8 @@ function kMeans(data, k) {
 
   console.log('clusters :>> ', clusters);
   // todo: recalculate centroids
+
+  return centroids;
 }
 
 function recalculateCentroids(clusters) {
