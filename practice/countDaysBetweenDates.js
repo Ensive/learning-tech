@@ -69,8 +69,8 @@ const totalDays = [
   daysAtCS,
   daysAtGlomex,
   daysAtKayzen,
-  // daysAtCollaba,
-  // daysAtSonatus
+  daysAtCollaba,
+  daysAtSonatus
 ];
 
 const totalDaysCount = totalDays.reduce((value, currentValue) => {
