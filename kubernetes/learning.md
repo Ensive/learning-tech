@@ -104,3 +104,33 @@ Service Types:
 
 ## Gateway
 
+Gateway API is a family of API kinds that provide dynamic infrastructure provisioning and advanced traffic routing
+
+* expose services to outside world
+* hosting services on a single api
+* hosting services on the same port via path routing
+
+Gateway API has for stable API kinds:
+* GatewayClass
+* Gateway
+* HTTPRoute
+* GRPCRoute
+
+HTTPRoute -> Gateway -> GatewayClass
+
+GatewayController must be a domain prefixed path (must include path)
+
+Note: Gateway is the newer alternative to Ingress which you might still come across in production systems.
+
+Envoy Gateway/Proxy
+https://gateway.envoyproxy.io/docs/concepts/
+
+Install envoy:
+`kubectl apply --server-side -f https://github.com/envoyproxy/gateway/releases/download/v1.5.1/install.yaml`
+
+## Materials
+
+1) https://www.coursera.org/projects/googlecloud-orchestrating-the-cloud-with-kubernetes-aws-ygvoa
+2) https://www.coursera.org/specializations/pearson-certified-kubernetes-application-developer-ckad
+
+* https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift
