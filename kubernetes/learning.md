@@ -128,7 +128,56 @@ https://gateway.envoyproxy.io/docs/concepts/
 Install envoy:
 `kubectl apply --server-side -f https://github.com/envoyproxy/gateway/releases/download/v1.5.1/install.yaml`
 
-## Materials
+To create a proper gateway
+
+1) Create class (pointing to envoy gateway controller)
+2) Create gateway
+3) Create HTTP route (routing)
+
+/apis/gateway.networking.k8s.io/v1/namespaces/default/gateways/app-gateway
+/apis/gateway.networking.k8s.io/v1/gatewayclasses
+
+`minikube tunnel -c`
+
+Correct resolution sequence
+
+DNS (/etc/hosts) -> IP Address -> Gateway -> Service -> Pod
+
+"gateway.networking.k8s.io/v1" is a core extension of kubernetes api, but not native k8s api; that's why API version different from v1
+
+In a nutshell, however, the important take-away is that in most production deployments you'll be using annotations specific to the cloud provider you're using. Each major cloud provider has their own products, so you need to use k8s annotations and extensions specific to that cloud provider.
+
+To clean deployment yaml:
+`kubectl get deployment synergychat-web -o yaml \
+  | kubectl neat > controllers/web-deployment.yaml`
+
+`kubectl apply -f config/web-configmap.yaml`
+`kubectl rollout restart deployment/synergychat-web`
+
+## Storage
+
+pods are ephemeral
+once you delete the pod - the filesystem is deleted along the pod (e.g. On-disk files in a container are ephemeral)
+
+`kubectl logs synergychat-crawler-bbfdbf5b6-ch77g --all-containers`
+
+It's important to remember that while it's common for a pod to run just a single container, multiple containers can run in a single pod. This is useful when you have containers that need to share resources. In other words, we can scale up the instances of an application either at the container level or at the pod level.
+
+How do you choose?
+
+### Persistent Volumes
+
+Static PVs
+Dynamic PVs
+
+kubectl get pv
+kubectl get pvc
+
+## Namespaces
+
+`kubectl get namespaces`
+
+## Further reading/learning
 
 1) https://www.coursera.org/projects/googlecloud-orchestrating-the-cloud-with-kubernetes-aws-ygvoa
 2) https://www.coursera.org/specializations/pearson-certified-kubernetes-application-developer-ckad
