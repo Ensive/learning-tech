@@ -10,4 +10,3 @@ Practice Break down tasks
 * how long it takes
 
 Over communicate
-
